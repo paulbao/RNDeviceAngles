@@ -6,7 +6,7 @@
 //
 
 #import <React/RCTBridge.h>
-#import "RCTEventDispatcher.h"
+#import <React/RCTEventDispatcher.h>
 #import "DeviceAngles.h"
 
 @implementation DeviceAngles
@@ -29,6 +29,11 @@ RCT_EXPORT_MODULE();
         }
     }
     return self;
+}
+
++ (BOOL)requiresMainQueueSetup
+{
+    return NO;
 }
 
 RCT_EXPORT_METHOD(setDeviceMotionUpdateInterval:(double) interval) {

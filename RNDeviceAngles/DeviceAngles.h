@@ -5,7 +5,7 @@
 //  Created by Cristian Szwarc on 20/08/16.
 
 #import <Foundation/Foundation.h>
-#import "RCTBridgeModule.h"
+#import <React/RCTBridgeModule.h>
 #import <CoreMotion/CoreMotion.h>
 
 @interface DeviceAngles : NSObject <RCTBridgeModule> {
